@@ -156,3 +156,73 @@ button:hover {
 h2 {
   margin-top: 30px;
 }
+
+
+.footer-main {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #d6d6d696;
+    margin-top: 40px;
+}
+
+/* footer css */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 0 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.footer-col h3 {
+  color: #f5c518;
+}
+
+.footer-col h4 {
+  margin-bottom: 10px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #aaa;
+}
