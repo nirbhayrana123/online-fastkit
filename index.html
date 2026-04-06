@@ -1,151 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Home Kit</title>
- <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <title>Home Kit</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link href="./css/style.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <header class="header">
+    <div class="logo">
+      <h3>BOOK <span>NOW</span></h3>
+      <div class="delivery">
+        <p><strong>Delivery in 8 minutes</strong></p>
+      </div>
+    </div>
 
-<!-- HEADER -->
-<header class="header">
 
-  <!-- Logo -->
-  <div class="logo">
-    <img src="./images/FreshKart.svg"
-  </div>
 
-  <!-- Delivery Info -->
-<div class="delivery">
-  <strong>Delivery in 5 minutes</strong><br>
+    <div class="search-box">
+      <input type="text" placeholder='Search "paneer"'>
+    </div>
 
-  <div class="location-box" onclick="toggleDropdown()">
-    <span id="selectedLocation">Select Location 📍</span>
-  </div>
+    <div class="header-right">
+      <a href="#">Login</a>
+      <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i> My Cart</button>
+    </div>
 
-  <div class="delivery">
-    <p><strong>Delivery in 8 minutes</strong></p>
-    <span>Select Location ▼</span>
-  </div>
+  </header>
 
-  <div class="search-box">
-    <input type="text" placeholder='Search "paneer"'>
-  </div>
+  <!-- PRODUCTS -->
+  <section class="product">
+    <div class="container">
+      <h2>Top Products</h2>
+      <div class="product-row">
 
-  <div class="header-right">
-    <a href="#">Login</a>
-    <button class="cart-btn">🛒 My Cart</button>
-  </div>
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Tata Salt Lite</h4>
+          <p class="weight">1 kg</p>
+          <div class="bottom">
+            <span class="price">₹50</span>
+            <button>ADD</button>
+          </div>
+        </div>
 
-</header>
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Black Salt</h4>
+          <p class="weight">200 g</p>
+          <div class="bottom">
+            <span class="price">₹47</span>
+            <button>ADD</button>
+          </div>
+        </div>
 
-<!-- PRODUCTS -->
-<div class="container">
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Rock Salt</h4>
+          <p class="weight">500 g</p>
+          <div class="bottom">
+            <span class="price">₹64</span>
+            <button>ADD</button>
+          </div>
+        </div>
 
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Tata Salt Lite</h4>
+          <p class="weight">1 kg</p>
+          <div class="bottom">
+            <span class="price">₹50</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Black Salt</h4>
+          <p class="weight">200 g</p>
+          <div class="bottom">
+            <span class="price">₹47</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Rock Salt</h4>
+          <p class="weight">500 g</p>
+          <div class="bottom">
+            <span class="price">₹64</span>
+            <button>ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>People also bought</h2> 
+      <div class="product-row">
+
+        <div class="product-card">
+          <span class="discount">22% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Turmeric Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">13% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Cooking Oil</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">23% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Coriander Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
+      </div>
   <h2>Top Products</h2>
+      <div class="product-row">
 
-  <div class="product-row">
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Tata Salt Lite</h4>
+          <p class="weight">1 kg</p>
+          <div class="bottom">
+            <span class="price">₹50</span>
+            <button>ADD</button>
+          </div>
+        </div>
 
-    <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Tata Salt Lite</h4>
-      <p class="weight">1 kg</p>
-      <div class="bottom">
-        <span class="price">₹50</span>
-        <button>ADD</button>
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Black Salt</h4>
+          <p class="weight">200 g</p>
+          <div class="bottom">
+            <span class="price">₹47</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Rock Salt</h4>
+          <p class="weight">500 g</p>
+          <div class="bottom">
+            <span class="price">₹64</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Tata Salt Lite</h4>
+          <p class="weight">1 kg</p>
+          <div class="bottom">
+            <span class="price">₹50</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Black Salt</h4>
+          <p class="weight">200 g</p>
+          <div class="bottom">
+            <span class="price">₹47</span>
+            <button>ADD</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/tata.jpg">
+          <p class="time">⏱ 8 MINS</p>
+          <h4>Rock Salt</h4>
+          <p class="weight">500 g</p>
+          <div class="bottom">
+            <span class="price">₹64</span>
+            <button>ADD</button>
+          </div>
+        </div>
+      </div>
+
+      <h2>People also bought</h2> 
+      <div class="product-row">
+
+        <div class="product-card">
+          <span class="discount">22% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Turmeric Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">13% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Cooking Oil</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">23% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Coriander Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
+        <div class="product-card">
+          <span class="discount">27% OFF</span>
+          <img src="images/tata.jpg">
+          <h4>Red Chilli Powder</h4>
+        </div>
+
       </div>
     </div>
 
-    <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Black Salt</h4>
-      <p class="weight">200 g</p>
-      <div class="bottom">
-        <span class="price">₹47</span>
-        <button>ADD</button>
-      </div>
-    </div>
+  </section>
 
-    <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Rock Salt</h4>
-      <p class="weight">500 g</p>
-      <div class="bottom">
-        <span class="price">₹64</span>
-        <button>ADD</button>
-      </div>
-    </div>
 
-      <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Tata Salt Lite</h4>
-      <p class="weight">1 kg</p>
-      <div class="bottom">
-        <span class="price">₹50</span>
-        <button>ADD</button>
-      </div>
-    </div>
 
-    <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Black Salt</h4>
-      <p class="weight">200 g</p>
-      <div class="bottom">
-        <span class="price">₹47</span>
-        <button>ADD</button>
-      </div>
-    </div>
 
-    <div class="product-card">
-      <img src="images/tata.jpg">
-      <p class="time">⏱ 8 MINS</p>
-      <h4>Rock Salt</h4>
-      <p class="weight">500 g</p>
-      <div class="bottom">
-        <span class="price">₹64</span>
-        <button>ADD</button>
-      </div>
-    </div>
-  </div>
 
-  <h2>People also bought</h2>
 
-  <div class="product-row">
 
-    <div class="product-card">
-      <span class="discount">22% OFF</span>
-      <img src="images/tata.jpg">
-      <h4>Turmeric Powder</h4>
-    </div>
 
-    <div class="product-card">
-      <span class="discount">13% OFF</span>
-      <img src="images/tata.jpg">
-      <h4>Cooking Oil</h4>
-    </div>
 
-    <div class="product-card">
-      <span class="discount">23% OFF</span>
-      <img src="images/tata.jpg">
-      <h4>Coriander Powder</h4>
-    </div>
 
-    <div class="product-card">
-      <span class="discount">27% OFF</span>
-      <img src="images/tata.jpg">
-      <h4>Red Chilli Powder</h4>
-    </div>
-
-  </div>
-
-</div>
 
 </body>
+
 </html>
