@@ -149,11 +149,12 @@ body {
 }
 
 button {
-  border: 1px solid green;
-  background: white;
-  color: green;
-  padding: 5px 10px;
-  border-radius: 5px;
+    border: 1px solid green;
+    background: white;
+    color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
