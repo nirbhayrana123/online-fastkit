@@ -1,26 +1,16 @@
 <!DOCTYPE html>
-<html>
- 
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" type="image/png" href="images/favicon.png">
-	<title>Fastkit - 3000+ products delivered to your doorstep</title>
- 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-		rel="stylesheet">
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"  > -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Home Kit</title>
+ <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="./css/style.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/style.css" rel="stylesheet" type="text/css">
 </head>
+<body>
 
-<body> 
-  
-<div class="header">
+<!-- HEADER -->
+<header class="header">
 
   <!-- Logo -->
   <div class="logo">
@@ -35,136 +25,95 @@
     <span id="selectedLocation">Select Location 📍</span>
   </div>
 
-  <div class="dropdown" id="dropdown">
-    <div onclick="selectLocation('Delhi')">Delhi</div>
-    <div onclick="selectLocation('Mumbai')">Mumbai</div>
-    <div onclick="selectLocation('Dehradun')">Dehradun</div>
-    <div onclick="selectLocation('My Village')">My Village</div>
-  </div>
-</div>
-
-  <!-- Search -->
-  <div class="search">
-    <input type="text" placeholder='Search "milk"'>
+  <div class="delivery">
+    <p><strong>Delivery in 8 minutes</strong></p>
+    <span>Select Location ▼</span>
   </div>
 
-  <!-- Right -->
-  <div class="right">
-    <div class="login">Login</div> 
-    <div class="cart-btn" onclick="toggleCart()">Cart 🛒</div>
+  <div class="search-box">
+    <input type="text" placeholder='Search "paneer"'>
   </div>
 
-</div>
+  <div class="header-right">
+    <a href="#">Login</a>
+    <button class="cart-btn">🛒 My Cart</button>
+  </div>
 
-<div class="hero" style="background-image: url('images/mainbanner.jpg');">
-  <h1>Fresh Grocery in 15 Minutes 🚚</h1>
-  <p>Fast • Fresh • Reliable</p>
-</div>
+</header>
 
+<!-- PRODUCTS -->
 <div class="container">
-  <h2>Popular Items</h2>
-  <div class="products" id="products"></div>
+
+  <h2>Top Products</h2>
+
+  <div class="product-row">
+
+    <div class="product-card">
+      <img src="images/tata.jpg">
+      <p class="time">⏱ 8 MINS</p>
+      <h4>Tata Salt Lite</h4>
+      <p class="weight">1 kg</p>
+      <div class="bottom">
+        <span class="price">₹50</span>
+        <button>ADD</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tata.jpg">
+      <p class="time">⏱ 8 MINS</p>
+      <h4>Black Salt</h4>
+      <p class="weight">200 g</p>
+      <div class="bottom">
+        <span class="price">₹47</span>
+        <button>ADD</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="images/tata.jpg">
+      <p class="time">⏱ 8 MINS</p>
+      <h4>Rock Salt</h4>
+      <p class="weight">500 g</p>
+      <div class="bottom">
+        <span class="price">₹64</span>
+        <button>ADD</button>
+      </div>
+    </div>
+
+  </div>
+
+  <h2>People also bought</h2>
+
+  <div class="product-row">
+
+    <div class="product-card">
+      <span class="discount">22% OFF</span>
+      <img src="images/tata.jpg">
+      <h4>Turmeric Powder</h4>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">13% OFF</span>
+      <img src="images/tata.jpg">
+      <h4>Cooking Oil</h4>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">23% OFF</span>
+      <img src="images/tata.jpg">
+      <h4>Coriander Powder</h4>
+    </div>
+
+    <div class="product-card">
+      <span class="discount">27% OFF</span>
+      <img src="images/tata.jpg">
+      <h4>Red Chilli Powder</h4>
+    </div>
+
+  </div>
+
 </div>
-
-<div class="cart" id="cartBox" style="display:none;">
-  <h2>Your Cart</h2>
-  <div id="cartItems"></div>
-  <div class="total" id="total"></div>
-  <button class="order-btn" onclick="placeOrder()">Place Order</button>
-</div>
-
-<script>
-let cart = [];
-
-const products = [
-  {name:"Tomato", price:20, img:"https://images.unsplash.com/photo-1582284540020-8acbe03f4924"},
-  {name:"Potato", price:15, img:"https://images.unsplash.com/photo-1590165482129-1b8b27698780"},
-  {name:"Milk", price:50, img:"https://images.unsplash.com/photo-1580910051074-3eb694886505"},
-  {name:"Apple", price:100, img:"https://images.unsplash.com/photo-1567306226416-28f0efdc88ce"},
-  {name:"Banana", price:40, img:"https://images.unsplash.com/photo-1574226516831-e1dff420e12d"},
-  {name:"Bread", price:30, img:"https://images.unsplash.com/photo-1608198093002-ad4e005484ec"}
-];
-
-const productDiv = document.getElementById("products");
-
-products.forEach((p, i) => {
-  const div = document.createElement("div");
-  div.className = "card";
-  div.innerHTML = `
-    <img src="${p.img}">
-    <h3>${p.name}</h3>
-    <p class="price">₹${p.price}</p>
-    <button onclick="addToCart(${i})">Add to Cart</button>
-  `;
-  productDiv.appendChild(div);
-});
-
-function addToCart(i){
-  cart.push(products[i]);
-  renderCart();
-}
-
-function renderCart(){
-  const cartItems = document.getElementById("cartItems");
-  const totalEl = document.getElementById("total");
-
-  cartItems.innerHTML = "";
-  let total = 0;
-
-  cart.forEach(item=>{
-    const div = document.createElement("div");
-    div.className = "cart-item";
-    div.innerText = item.name + " - ₹" + item.price;
-    cartItems.appendChild(div);
-    total += item.price;
-  });
-
-  totalEl.innerText = "Total: ₹" + total;
-}
-
-function toggleCart(){
-  const cartBox = document.getElementById("cartBox");
-  cartBox.style.display = cartBox.style.display === "none" ? "block" : "none";
-}
-
-function placeOrder(){
-  if(cart.length === 0){
-    alert("Cart empty!");
-    return;
-  }
-
-  let msg = "Order:\n";
-  cart.forEach(i=>{
-    msg += i.name + " - ₹" + i.price + "\n";
-  });
-
-  msg += "\nTotal: ₹" + cart.reduce((a,b)=>a+b.price,0);
-
-  window.open(`https://wa.me/8865951922?text=${encodeURIComponent(msg)}`);
-}
-</script>
-
-
-<script>
-function toggleDropdown() {
-  const d = document.getElementById("dropdown");
-  d.style.display = d.style.display === "block" ? "none" : "block";
-}
-
-function selectLocation(loc) {
-  document.getElementById("selectedLocation").innerText = loc + " 📍";
-  document.getElementById("dropdown").style.display = "none";
-}
-
-// Close dropdown when clicking outside
-window.onclick = function(e) {
-  if (!e.target.closest(".delivery")) {
-    document.getElementById("dropdown").style.display = "none";
-  }
-}
-</script>
-
- 
 
 </body>
 </html>
