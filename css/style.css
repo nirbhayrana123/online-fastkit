@@ -65,13 +65,13 @@ body {
 }
 
 .search-box input {
-  width: 100%;
-  padding: 17px 10px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  background: #f8f8f8;
-  outline: none;
-  font-size: 18px;
+    width: 80%;
+    padding: 15px 20px;
+    border-radius: 85px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    outline: none;
+    font-size: 18px;
 }
 
 .header-right {
