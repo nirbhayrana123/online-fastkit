@@ -107,7 +107,9 @@ function updateCart() {
 function toggleCart() {
   document.getElementById("cartSidebar").classList.toggle("active");
 }
-
+document.querySelector(".cart-header").addEventListener("click", function() {
+  document.getElementById("cartSidebar").classList.remove("active");
+});
 
 /* =========search code ========*/
 

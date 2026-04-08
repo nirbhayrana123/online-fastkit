@@ -29,8 +29,8 @@
 
     <div class="header-right">
       <a href="#">Login</a>
-      <button class="cart-btn" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i> My Cart (<span
-          id="cartCount">0</span>) </button>
+      <button class="cart-btn" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i> My Cart <span
+          id="cartCount">0</span> </button>
 
     </div>
   </header>
@@ -55,10 +55,10 @@
           <p class="time">⏱ 8 MINS</p>
           <h4>Dal</h4>
           <p class="weight">1 kg</p>
-           <div class="bottom">
-          <p class="price">₹25</p>
-          <div id="cart-Item1"></div>
-        </div>
+          <div class="bottom">
+            <p class="price">₹25</p>
+            <div id="cart-Item1"></div>
+          </div>
         </div>
 
         <div class="product-card" data-name="Black Salt">
@@ -99,7 +99,7 @@
           <p class="weight">1 kg</p>
           <div class="bottom">
             <span class="price">₹50</span>
-           <div id="cart-Item4"></div>
+            <div id="cart-Item4"></div>
           </div>
         </div>
 
@@ -197,7 +197,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item11"></div>
+            <div id="cart-Item11"></div>
           </div>
         </div>
 
@@ -211,7 +211,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item12"></div>
+            <div id="cart-Item12"></div>
           </div>
         </div>
 
@@ -225,7 +225,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item13"></div>
+            <div id="cart-Item13"></div>
           </div>
         </div>
 
@@ -239,7 +239,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item14"></div>
+            <div id="cart-Item14"></div>
           </div>
         </div>
 
@@ -253,7 +253,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item15"></div>
+            <div id="cart-Item15"></div>
           </div>
         </div>
 
@@ -267,7 +267,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item16"></div>
+            <div id="cart-Item16"></div>
           </div>
         </div>
 
@@ -309,7 +309,7 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item19"></div>
+            <div id="cart-Item19"></div>
           </div>
         </div>
 
@@ -323,24 +323,26 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-             <div id="cart-Item20"></div>
+            <div id="cart-Item20"></div>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+  
   <!-- CART -->
   <div id="cartSidebar" class="cart-sidebar">
-    <div class="cart-header">My Cart</div>
-    <div id="cartItems"></div>
+    <a class="cart-header"><i class="fa-solid fa-angles-left"></i> My Cart</a>
+    <div class="itemscart" id="cartItems"></div>
+    <div class="bottom-bar">
+      <span>₹<span id="totalPrice">0</span></span>
+      <span>Proceed →</span>
+    </div>
   </div>
 
   <!-- BOTTOM BAR -->
-  <div class="bottom-bar">
-    <span>₹<span id="totalPrice">0</span></span>
-    <span>Proceed →</span>
-  </div>
+
 
   <footer class="footer">
     <div class="footer-container">
