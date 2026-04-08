@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Home Kit - 300+ products delivered to your doorstep</title> 
+  <title>Home Kit - 300+ products delivered to your doorstep</title>
 
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link href="./css/style.css" rel="stylesheet">
@@ -16,19 +16,22 @@
   <header class="header">
     <div class="logo">
       <h3>Home <span>Kit</span></h3>
-      <div class="delivery">
-        <p><strong>Delivery in 5 minutes</strong></p>
-      </div>
+    </div>
+    <div class="delivery">
+      <p><strong>Delivery in 5 minutes</strong></p>
+      <p>Select Location</p>
     </div>
 
     <div class="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
       <input type="text" id="searchInput" placeholder='Search "paneer"'>
     </div>
 
     <div class="header-right">
       <a href="#">Login</a>
-      <button class="cart-btn"> <i class="fa-solid fa-cart-shopping"></i> My Cart <span id="cartCount">0</span></button>
-      
+      <button class="cart-btn" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i> My Cart (<span
+          id="cartCount">0</span>) </button>
+
     </div>
   </header>
 
@@ -45,21 +48,21 @@
       <div class="product-row">
 
         <div class="product-card" data-name="Dal Lentils">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/chana-dal.jpg">
           </div>
           <p class="time">⏱ 8 MINS</p>
-          <h4>Dal (Lentils)</h4>
+          <h4>Dal</h4>
           <p class="weight">1 kg</p>
-          <div class="bottom">
-            <span class="price">₹50</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
-          </div>
+           <div class="bottom">
+          <p class="price">₹25</p>
+          <div id="cart-Item1"></div>
+        </div>
         </div>
 
         <div class="product-card" data-name="Black Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/ata.jpg">
           </div>
@@ -68,12 +71,12 @@
           <p class="weight">200 g</p>
           <div class="bottom">
             <span class="price">₹47</span>
-             <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item2"></div>
           </div>
         </div>
 
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/mdh.jpg">
           </div>
@@ -82,12 +85,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item3"></div>
           </div>
         </div>
 
         <div class="product-card" data-name="Tata Salt Lite">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/chini.jpg">
           </div>
@@ -96,12 +99,12 @@
           <p class="weight">1 kg</p>
           <div class="bottom">
             <span class="price">₹50</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+           <div id="cart-Item4"></div>
           </div>
         </div>
 
         <div class="product-card" data-name="Black Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/oil.jpg">
           </div>
@@ -110,12 +113,12 @@
           <p class="weight">200 g</p>
           <div class="bottom">
             <span class="price">₹47</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item5"></div>
           </div>
         </div>
 
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/badam.jpg">
           </div>
@@ -124,12 +127,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item6"></div>
           </div>
         </div>
- 
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/chawal-rice.jpg">
           </div>
@@ -138,12 +141,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item7"></div>
           </div>
         </div>
- 
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/tea-tata.jpg">
           </div>
@@ -152,12 +155,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item8"></div>
           </div>
         </div>
- 
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/alu.jpg">
           </div>
@@ -166,12 +169,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item9"></div>
           </div>
         </div>
- 
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/peyaz.jpg">
           </div>
@@ -180,12 +183,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item10"></div>
           </div>
         </div>
- 
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/Jeera.jpg">
           </div>
@@ -194,13 +197,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item11"></div>
           </div>
         </div>
 
- 
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/Haldi.jpg">
           </div>
@@ -209,12 +211,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item12"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/powder-lal-mirch.jpg">
           </div>
@@ -223,12 +225,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item13"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/dhaniya-powder.jpg">
           </div>
@@ -237,12 +239,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item14"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/tata.jpg">
           </div>
@@ -251,12 +253,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item15"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/kaju.jpg">
           </div>
@@ -265,12 +267,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item16"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/mdh.jpg">
           </div>
@@ -279,12 +281,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item17"></div>
           </div>
         </div>
-         
+
         <div class="product-card" data-name="Rock Salt">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/anjeer.webp">
           </div>
@@ -293,13 +295,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+            <div id="cart-Item18"></div>
           </div>
         </div>
 
-         
         <div class="product-card" data-name="Dal Lentils">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/moong-dal.jpg">
           </div>
@@ -308,13 +309,12 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item19"></div>
           </div>
         </div>
 
-         
         <div class="product-card" data-name="Dal Lentils">
-          <span class="discount">22% OFF</span>
+          <span class="discount">22% <br>OFF</span>
           <div class="imgbox">
             <img src="images/uraddal.jpg">
           </div>
@@ -323,19 +323,24 @@
           <p class="weight">500 g</p>
           <div class="bottom">
             <span class="price">₹64</span>
-            <button onclick="addToCart('Dal (Lentils)', 50)">ADD</button>
+             <div id="cart-Item20"></div>
           </div>
         </div>
-
-
-
 
       </div>
     </div>
   </section>
+  <!-- CART -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">My Cart</div>
+    <div id="cartItems"></div>
+  </div>
 
-
-
+  <!-- BOTTOM BAR -->
+  <div class="bottom-bar">
+    <span>₹<span id="totalPrice">0</span></span>
+    <span>Proceed →</span>
+  </div>
 
   <footer class="footer">
     <div class="footer-container">
@@ -384,22 +389,8 @@
   </footer>
 
 
-  <script src="js/custom.js"></script>
-
-  <script>
-let cart = [];
-
-// ADD button click
-function addToCart(productName, price) {
-  cart.push({name: productName, price: price});
-  updateCartCount();
-}
-
-// Cart count update
-function updateCartCount() {
-  document.getElementById("cartCount").innerText = cart.length;
-}
-</script>
+  <!-- your content -->
+  <script src="./js/custom.js"></script>
 </body>
 
 </html>

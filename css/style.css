@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
 
 body {
   margin: 0;
@@ -18,8 +21,8 @@ body {
 }
 
 .banner img {
-    width: 100%;
-    border-radius: 20px;
+  width: 100%;
+  border-radius: 20px;
 }
 
 
@@ -37,8 +40,9 @@ body {
 }
 
 .logo h3 {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .logo h3 span {
@@ -58,19 +62,32 @@ body {
   font-size: 14px;
 }
 
+.delivery p strong {
+  font-size: 16px;
+}
+
 .search-box {
   display: flex;
-  width: 60%;
+  width: 50%;
+  justify-content: center;
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+  left: 18px;
+  top: 37%;
+  color: #777777;
 }
 
 .search-box input {
-    width: 80%;
-    padding: 15px 20px;
-    border-radius: 85px;
-    border: 1px solid #ddd;
-    background: #ffffff;
-    outline: none;
-    font-size: 18px;
+  width: 100%;
+  padding: 15px 13px 13px 44px;
+  border-radius: 85px;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  outline: none;
+  font-size: 18px;
 }
 
 .header-right {
@@ -148,18 +165,16 @@ body {
   font-weight: bold;
 }
 
-button {
-    border: 1px solid green;
-    background: white;
-    color: green;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-  background: green;
-  color: white;
+.cart-btn {
+  background: #008000;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 8px;
+  color: #fffcf8;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .discount {
@@ -177,10 +192,6 @@ h2 {
   margin-top: 30px;
 }
 
-
-
-
-/* footer css */
 .footer {
   background: #111;
   color: #fff;
@@ -228,7 +239,6 @@ h2 {
   color: #fff;
 }
 
-/* Bottom */
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #333;
@@ -236,4 +246,112 @@ h2 {
   padding-top: 15px;
   font-size: 13px;
   color: #aaa;
+}
+
+
+
+/* new css */
+
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid green;
+  color: green;
+  background: #fff;
+  border-radius: 5px;
+  min-width: 95px;
+}
+
+.qty-box {
+  display: flex;
+  justify-content: space-between;
+  background: #0c831f;
+  color: #fff;
+  border-radius: 6px;
+  padding: 5px 10px;
+  min-width: 95px;
+  align-items: center;
+  font-weight: 800;
+}
+
+.qty-box button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+.cart-sidebar {
+  position: fixed;
+  right: -380px;
+  top: 0;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  overflow: auto;
+  z-index: 9999;
+}
+
+.cart-sidebar.active {
+  right: 0;
+}
+
+.cart-header {
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.cart-info {
+  flex: 1;
+}
+
+.cart-info p {
+  margin: 2px 0;
+  font-size: 13px;
+}
+
+.cart-price {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 380px;
+  background: #0c831f;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
