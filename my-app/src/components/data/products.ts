@@ -9,27 +9,27 @@ const products = [
     newPrice: 55,
     weight: "4 kg",
     main_img: "/images/chana-dal.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
     id: "2",
     iscount: "17% OFF",
-    name: "Moong Chilka (Split Green Gram)",
+    name: "Moong Chilka (Split Green Gram) Dal",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
     oldPrice: 45,
     newPrice: 40,
     weight: "7 kg",
     main_img: "/images/moong-dal.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -41,11 +41,11 @@ const products = [
     newPrice: 73,
     weight: "1 kg",
     main_img: "/images/uraddal.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -56,11 +56,11 @@ const products = [
     newPrice: 50,
     weight: "2 kg",
     main_img: "/images/ata.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -72,11 +72,11 @@ const products = [
     newPrice: 32,
     weight: "200 g",
     main_img: "/images/mdh.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -86,11 +86,11 @@ const products = [
     newPrice: 43,
     weight: "1 kg",
     main_img: "/images/chini.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -102,11 +102,11 @@ const products = [
     newPrice: 53,
     weight: "1 kg",
     main_img: "/images/oil.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -117,11 +117,11 @@ const products = [
     newPrice: 680,
     weight: "1 kg",
     main_img: "/images/badam.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -133,11 +133,11 @@ const products = [
     newPrice: 55,
     weight: "1 kg",
     main_img: "/images/chawal-rice.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -148,11 +148,11 @@ const products = [
     newPrice: 80,
     weight: "250 g",
     main_img: "/images/tea-tata.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -163,11 +163,11 @@ const products = [
     newPrice: 20,
     weight: "1 kg",
     main_img: "/images/alu.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -179,11 +179,11 @@ const products = [
     newPrice: 30,
     weight: "1 kg",
     main_img: "/images/peyaz.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
@@ -194,30 +194,30 @@ const products = [
     newPrice: 44,
     weight: "250 g",
     main_img: "/images/Jeera.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
-    id: "13",
+    id: "14",
     name: "Haldi (Turmeric)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
     oldPrice: 500,
     newPrice: 490,
     weight: "1 kg",
     main_img: "/images/Haldi.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
-    id: "14",
+    id: "15",
     discount: "10% OFF",
     name: "Lal Mirch (Red Chili)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
@@ -225,15 +225,15 @@ const products = [
     newPrice: 39,
     weight: "250 g",
     main_img: "/images/powder-lal-mirch.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
-    id: "15",
+    id: "16",
     discount: "14% OFF",
     name: "Dhaniya Powder (Coriander)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
@@ -241,15 +241,15 @@ const products = [
     newPrice: 200,
     weight: "500 g",
     main_img: "/images/dhaniya-powder.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
-    id: "16",
+    id: "17",
     discount: "14% OFF",
     name: "Namak (Salt)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
@@ -257,44 +257,30 @@ const products = [
     newPrice: 27,
     weight: "1 kg",
     main_img: "/images/tata.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
   {
-    id: "17",
+    id: "18",
     discount: "5% OFF",
     name: "Kaju (Cashews)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
     newPrice: 300,
     weight: "250 g",
     main_img: "/images/kaju.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
-  },
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
+  }, 
 
   {
-    id: "18",
-    name: "Garam Masala",
-    declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
-    newPrice: 40,
-    weight: "1 kg",
-    main_img: "/images/mdh.jpg",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
-  },
-
-  {
-    id: "19",
+    id: "20",
     discount: "17% OFF",
     name: "Anjeer (Figs)",
     declaration: "Get items delivered to your doorstep from dark stores near you, whenever you need them.",
@@ -302,11 +288,11 @@ const products = [
     newPrice: 340,
     weight: "300 g",
     main_img: "/images/anjeer.webp",
-    one_img: "/images/chana-dal.jpg",
-    two_img: "/images/chana-dal.jpg",
-    three_img: "/images/chana-dal.jpg",
-    four_img: "/images/chana-dal.jpg",
-    five_img: "/images/chana-dal.jpg"
+    one_img: "/images/moong-dal.jpg",
+    two_img: "/images/uraddal.jpg",
+    three_img: "/images/badam.jpg",
+    four_img: "/images/chawal-rice.jpg",
+    five_img: "/images/dhaniya-powder.jpg"
   },
 
 

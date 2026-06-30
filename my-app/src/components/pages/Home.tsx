@@ -1,5 +1,8 @@
 import products from "../data/products";
 import { useNavigate } from "react-router-dom";
+  const handleScroll = () => {
+    document.getElementById("shopnow")?.scrollIntoView({ behavior: "smooth" });
+  };
 
 export default function Home({ addToCart, search, cart, decreaseQty }: any) {
   const navigate = useNavigate();
@@ -9,15 +12,20 @@ export default function Home({ addToCart, search, cart, decreaseQty }: any) {
   );
 
   return (
-    <div className="main">
+    <div className="main mb-6">
 
       <section>
-        <div className="banner">
-          <img src="./images/mainbanner.jpg" />
+        <div className="hero">
+          <div className="contnt">
+            <h1>Fresh Groceries Delivered to Your Doorstep</h1>
+            <p>Best quality fruits, vegetables, and daily essentials at affordable prices. Shop now and get fast delivery with great discounts</p>
+            <button onClick={handleScroll} className="cart-btn">Shop Now</button>
+          </div>
+          <img src="./images/mainbanner.png" />
         </div>
       </section>
 
-      <h2>Bestsellers</h2>
+      <h2  id="shopnow">Bestsellers</h2>
       <div className="product-row">
         {filtered.map((p) => (
           <div className="product-card">
@@ -31,7 +39,7 @@ export default function Home({ addToCart, search, cart, decreaseQty }: any) {
               <div className="productname">
                 <h4>{p.name}</h4>
               </div>
-              <p className="weight">{p.weight}</p>
+              <p>{p.weight}</p>
               <div className="pricebox">
                 <p className="oldprice">₹{p.oldPrice}</p>
                 <p className="price">₹{p.newPrice}</p>
@@ -66,7 +74,7 @@ export default function Home({ addToCart, search, cart, decreaseQty }: any) {
 
           </div>
         ))}
-      </div>
+      </div> 
     </div>
   );
 }

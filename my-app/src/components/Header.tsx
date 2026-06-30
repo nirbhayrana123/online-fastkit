@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function Header({ search, setSearch, cart, toggleCart }: any) {
   return (
     <header className="header">
 
-      <div className="logo">
+      <Link to="/" className="logo">
         <h3>Home <span>Kit</span></h3>
-      </div>
+      </Link>
 
       <div className="delivery">
-        <p><strong>Delivery in 5 minutes</strong></p>
+        <p><strong>Delivery in 15 minutes</strong></p>
         <p>Select Location</p>
       </div>
 

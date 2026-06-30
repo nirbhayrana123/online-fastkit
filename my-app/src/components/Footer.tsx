@@ -12,7 +12,7 @@ export default function Footer() {
 
  
       <div className="footer-col">
-        <h4>Useful Links</h4>
+        <h5>Useful Links</h5>
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
@@ -22,7 +22,7 @@ export default function Footer() {
       </div>
 
        <div className="footer-col">
-        <h4>Categories</h4>
+        <h5>Categories</h5>
         <ul>
           <li><a href="#">Vegetables & Fruits</a></li>
           <li><a href="#">Dairy & Breakfast</a></li>
@@ -33,7 +33,7 @@ export default function Footer() {
 
    
       <div className="footer-col">
-        <h4>Contact</h4>
+        <h5>Contact</h5>
         <p>Email: support@Home Kit.com</p>
         <p>Phone: +91 98765 43210</p>
       </div>
