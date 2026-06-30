@@ -79,7 +79,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
+span.pointer {
+    cursor: pointer;
+}
 
 :root {
   --White: #fff;
