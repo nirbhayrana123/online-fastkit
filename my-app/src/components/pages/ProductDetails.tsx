@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import products from "../data/products";
+import products from "../data/api";
 import { useState } from "react";
 
 export default function ProductDetails({ addToCart }: any) {

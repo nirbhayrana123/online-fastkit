@@ -1,4 +1,4 @@
-import products from "../data/products";
+import products from "../data/api";
 import { useNavigate } from "react-router-dom";
   const handleScroll = () => {
     document.getElementById("shopnow")?.scrollIntoView({ behavior: "smooth" });
