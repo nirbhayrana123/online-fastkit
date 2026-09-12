@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer-container">
      
       <div className="footer-col">
-        <h3>Home Kit</h3>
+        <h3>Homes Kit</h3>
         <p>India’s last minute app for grocery and daily needs.</p>
       </div>
 

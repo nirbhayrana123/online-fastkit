@@ -5,11 +5,11 @@ export default function Header({ search, setSearch, cart, toggleCart }: any) {
     <header className="header">
 
       <Link to="/" className="logo">
-        <h3>Home <span>Kit</span></h3>
+        <h3>Homes <span>Kit</span></h3>
       </Link>
 
       <div className="delivery">
-        <p><strong>Delivery in 15 minutes</strong></p>
+        <p><strong>Delivery within 15 minutes on orders above ₹1K</strong></p>
         <p>Select Location</p>
       </div>
 
