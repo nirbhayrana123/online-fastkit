@@ -79,11 +79,11 @@ export default function CartSidebar({ cart, closeCart }: any) {
         </div>
       </div>
 
-      {/* Proceed Button */}
+      {/* Order Now Button */}
       <div className="bottom-bar" onClick={sendToWhatsApp}>
         <span>₹{grandTotal} TOTAL</span>
         <span className="pointer">
-          Proceed <i className="fa-solid fa-angle-right"></i>
+          Order Now <i className="fa-solid fa-angle-right"></i>
         </span>
       </div>
     </div>

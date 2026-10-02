@@ -13,38 +13,31 @@ export default function App() {
   const [cartOpen, setCartOpen] = useState(false);
 
   const addToCart = (product: any) => {
-    const exist = cart.find((i) => i.id === product.id);
-
-    if (exist) {
-      setCart(
-        cart.map((i) =>
-          i.id === product.id ? { ...i, qty: i.qty + 1 } : i
-        )
-      );
-    } else {
-      setCart([...cart, { ...product, qty: 1 }]);
-    }
+    setCart((prevCart) => {
+      const exist = prevCart.find((i) => String(i.id) === String(product.id));
+      if (exist) {
+        return prevCart.map((i) =>
+          String(i.id) === String(product.id) ? { ...i, qty: i.qty + 1 } : i
+        );
+      }
+      return [...prevCart, { ...product, qty: 1 }];
+    });
   };
 
-  // 🔥 NEW (for - button)
   const decreaseQty = (product: any) => {
-    setCart(
-      cart
+    setCart((prevCart) =>
+      prevCart
         .map((i) =>
-          i.id === product.id ? { ...i, qty: i.qty - 1 } : i
+          String(i.id) === String(product.id) ? { ...i, qty: i.qty - 1 } : i
         )
         .filter((i) => i.qty > 0)
     );
   };
 
-  const toggleCart = () => {
-    setCartOpen(!cartOpen);
-  };
+  const toggleCart = () => setCartOpen(!cartOpen);
 
   return (
     <Router>
-
-      {/* HEADER */}
       <Header
         search={search}
         setSearch={setSearch}
@@ -52,9 +45,8 @@ export default function App() {
         toggleCart={toggleCart}
       />
 
-      <div className="container">
-
-        {/* LEFT */}
+      {/* MAIN CONTAINER WRAPPER */}
+      <main className="main-content container" style={{ minHeight: "70vh" }}>
         <Routes>
           <Route
             path="/"
@@ -62,26 +54,28 @@ export default function App() {
               <Home
                 addToCart={addToCart}
                 search={search}
-                cart={cart}              // ✅ IMPORTANT
-                decreaseQty={decreaseQty} // ✅ IMPORTANT
+                cart={cart}
+                decreaseQty={decreaseQty}
               />
             }
           />
           <Route
             path="/product/:id"
-            element={<ProductDetails addToCart={addToCart} />}
+            element={
+              <ProductDetails
+                addToCart={addToCart}
+                cart={cart}
+                decreaseQty={decreaseQty}
+              />
+            }
           />
         </Routes>
 
-        {/* RIGHT CART */}
+        {/* CART SIDEBAR */}
         <div className={`cart-sidebar ${cartOpen ? "active" : ""}`}>
-          <CartSidebar
-            cart={cart}
-            closeCart={() => setCartOpen(false)}
-          />
+          <CartSidebar cart={cart} closeCart={() => setCartOpen(false)} />
         </div>
-
-      </div>
+      </main>
 
       <Footer />
     </Router>

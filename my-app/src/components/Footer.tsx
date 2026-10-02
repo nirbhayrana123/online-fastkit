@@ -3,10 +3,11 @@ export default function Footer() {
   return (
 
    <footer className="footer">
-    <div className="footer-container">
+    <div className="container">
+    <div className="footer-row">
      
       <div className="footer-col">
-        <h3>Homes Kit</h3>
+        <h3>Fres Kart</h3>
         <p>India’s last minute app for grocery and daily needs.</p>
       </div>
 
@@ -45,6 +46,7 @@ export default function Footer() {
       <p>© 2026 Home Kit clone | Made by</p>
     </div>
 
+    </div> 
   </footer>
 
   );
