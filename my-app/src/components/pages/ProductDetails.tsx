@@ -107,6 +107,7 @@ export default function ProductDetails({
           <div className="newbarr">
             <Link to="/" className="logo">Home</Link>
             <span>/</span>
+            <span>{product.name}</span> 
             <Link to="" className="logo">Product ID :</Link>
             <span>{product.id}</span>
           </div>

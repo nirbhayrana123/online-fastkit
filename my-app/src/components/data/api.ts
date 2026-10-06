@@ -2,7 +2,7 @@ const products = [
   {
     id: "1",
     name: "Dettol Original Soap",
-    keyword: "",
+    keyword: "", 
     weight: "125 g",
     oldPrice: 60,
     newPrice: 52,
