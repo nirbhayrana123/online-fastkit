@@ -107,12 +107,12 @@ export default function ProductDetails({
           <div className="newbarr">
             <Link to="/" className="logo">Home</Link>
             <span>/</span>
-            <span>{product.name}</span> 
+            <span>{product.name}</span>
             <Link to="" className="logo">Product ID :</Link>
             <span>{product.id}</span>
           </div>
 
-          <h4>{product.name}</h4>
+          <h5>{product.name}</h5>
 
           {(product as any).declaration && (
             <p className="declaration">{(product as any).declaration}</p>
@@ -139,9 +139,56 @@ export default function ProductDetails({
               </button>
             )}
 
-          <button className="cart-btn order">Order Now</button>
-
+            <button className="cart-btn order">Order Now</button>
           </div>
+          <section className="why-choose-section">
+            <h5>Why shop from FreshKart?</h5>
+
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+                </div>
+                <div className="feature-text">
+                  <h6>Lightning Fast Express Delivery</h6>
+                  <p>Get fresh groceries delivered right to your doorstep within 15 minutes.</p>
+                </div>
+              </div>
+
+
+              <div className="feature-card">
+                <div className="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l5.58-5.58c.94-.94.94-2.48 0-3.42L12 2Z" /><path d="M7 7h.01" /></svg>
+                </div>
+                <div className="feature-text">
+                  <h6>Best Price Guarantee & Deals</h6>
+                  <p>Enjoy direct wholesale prices and unbeatable daily discounts across products.</p>
+                </div>
+              </div>
+
+
+              <div className="feature-card">
+                <div className="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
+                </div>
+                <div className="feature-text">
+                  <h6>100% Quality & Freshness Assured</h6>
+                  <p>Sourced straight from local farms and verified brands with strict quality control.</p>
+                </div>
+              </div>
+
+
+              <div className="feature-card">
+                <div className="icon-box">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+                </div>
+                <div className="feature-text">
+                  <h6>30,000+ Wide Product Assortment</h6>
+                  <p>Explore thousands of products across daily staples, personal care, and household needs.</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
 
