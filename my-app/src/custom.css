@@ -553,12 +553,12 @@ button.cart-btn.order {
 
 .feature-card {
     display: flex;
-    gap: 14px;
+    gap: 10px;
     margin-bottom: 10px;
     align-items: center;
-    background-color: beige;
+    background-color: #0851650f;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .features-grid {

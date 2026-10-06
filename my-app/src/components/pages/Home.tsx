@@ -16,19 +16,19 @@ export default function Home({
 }: HomeProps) {
   const navigate = useNavigate();
 
-// Search filter logic
-const filteredProducts = products.filter((p: any) => {
-  const searchTerm = search.toLowerCase();
-  
-  const matchesName = p.name ? p.name.toLowerCase().includes(searchTerm) : false;
-  const matchesKeyword = p.keyword ? p.keyword.toLowerCase().includes(searchTerm) : false;
+  // Search filter logic
+  const filteredProducts = products.filter((p: any) => {
+    const searchTerm = search.toLowerCase();
 
-  return matchesName || matchesKeyword;
-});
+    const matchesName = p.name ? p.name.toLowerCase().includes(searchTerm) : false;
+    const matchesKeyword = p.keyword ? p.keyword.toLowerCase().includes(searchTerm) : false;
+
+    return matchesName || matchesKeyword;
+  });
   return (
     <div className="home-page main mb-6">
       <section><div className="hero"><div className="contnt"><h1>Fresh Groceries Delivered to Your Doorstep</h1><p>Best quality fruits, vegetables, and daily essentials at affordable prices. Shop now and get fast delivery with great discounts</p><button className="cart-btn">Shop Now</button></div></div></section>
-     <h2 id="shopnow">Bestsellers</h2>
+      <h2 id="shopnow">Bestsellers</h2>
 
       <section className="category-section">
         <div className="category-wrapper">
@@ -138,11 +138,7 @@ const filteredProducts = products.filter((p: any) => {
                 </div>
 
                 <div className="bottom">
-                  <div
-                    className="productname"
-                    onClick={() => navigate(`/product/${p.id}`)}
-                    style={{ cursor: "pointer" }}
-                  >
+                  <div className="productname" >
                     <h4>{p.name}</h4>
                   </div>
 

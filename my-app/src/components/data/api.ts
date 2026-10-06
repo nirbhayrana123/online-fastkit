@@ -2,7 +2,7 @@ const products = [
   {
     id: "1",
     name: "Dettol Original Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 60,
     newPrice: 52,
@@ -11,13 +11,13 @@ const products = [
     one_img: "/images/products/dettol2.webp",
     two_img: "/images/products/dettol3.webp",
     three_img: "/images/products/dettol4.webp",
-    four_img: "/images/products/dettol5.webp" 
+    four_img: "/images/products/dettol5.webp"
   },
 
   {
     id: "2",
     name: "Dove Cream Beauty Bathing Bar",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 85,
     newPrice: 72,
@@ -25,13 +25,13 @@ const products = [
     main_img: "/images/products/dove1.webp",
     one_img: "/images/products/dove2.webp",
     two_img: "/images/products/dove3.webp",
-    three_img: "/images/products/dove4.webp" 
+    three_img: "/images/products/dove4.webp"
   },
 
   {
     id: "3",
     name: "Pears Pure & Gentle Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 80,
     newPrice: 68,
@@ -43,7 +43,7 @@ const products = [
   {
     id: "4",
     name: "Lux Soft Rose Soap",
-    keyword: "",
+    keyword: "sabun Bar Soap",
     weight: "100 G",
     oldPrice: 45,
     newPrice: 38,
@@ -57,7 +57,7 @@ const products = [
   {
     id: "5",
     name: "Santoor Sandal & Turmeric Soap",
-    keyword: "",
+    keyword: "Soap sabun",
     weight: "125 G",
     oldPrice: 50,
     newPrice: 42,
@@ -72,7 +72,7 @@ const products = [
   {
     id: "6",
     name: "Lifebuoy Total 10 Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 42,
     newPrice: 36,
@@ -85,7 +85,7 @@ const products = [
   {
     id: "7",
     name: "Fiama Gel Bar Peach & Avocado",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 90,
     newPrice: 75,
@@ -98,7 +98,7 @@ const products = [
   {
     id: "8",
     name: "Cinthol Original Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "100 G",
     oldPrice: 48,
     newPrice: 40,
@@ -110,7 +110,7 @@ const products = [
   {
     id: "9",
     name: "Medimix Ayurvedic Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "125 G",
     oldPrice: 65,
     newPrice: 55,
@@ -124,7 +124,7 @@ const products = [
   {
     id: "10",
     name: "Godrej No.1 Lime & Aloe Vera Soap",
-    keyword: "",
+    keyword: "sabun Bar",
     weight: "100 G",
     oldPrice: 35,
     newPrice: 30,
@@ -137,7 +137,7 @@ const products = [
   {
     id: "11",
     name: "Surf Excel Easy Wash Detergent Powder",
-    keyword: "",
+    keyword: "Surf Powder",
     weight: "1 kG",
     oldPrice: 150,
     newPrice: 132,
@@ -150,7 +150,7 @@ const products = [
   {
     id: "12",
     name: "Ariel Complete Front & Top Load Powder",
-    keyword: "",
+    keyword: "Surf Powder",
     weight: "1 kG",
     oldPrice: 240,
     newPrice: 204,
@@ -163,7 +163,7 @@ const products = [
   {
     id: "13",
     name: "Tide Plus Extra Power Detergent",
-    keyword: "",
+    keyword: "Surf Powder",
     weight: "1 kG",
     oldPrice: 130,
     newPrice: 110,
@@ -176,7 +176,7 @@ const products = [
   {
     id: "14",
     name: "Rin Advanced Detergent Powder",
-    keyword: "",
+    keyword: "Surf Powder",
     weight: "1 kG",
     oldPrice: 105,
     newPrice: 90,
@@ -189,7 +189,7 @@ const products = [
   {
     id: "15",
     name: "Vim Dishwash Bar",
-    keyword: "",
+    keyword: "Bar",
     weight: "200 G",
     oldPrice: 25,
     newPrice: 20,
@@ -201,7 +201,7 @@ const products = [
   {
     id: "16",
     name: "Vim Dishwash Liquid Gel Lemon",
-    keyword: "",
+    keyword: "Bar",
     weight: "500 ml",
     oldPrice: 125,
     newPrice: 105,
@@ -212,9 +212,9 @@ const products = [
   },
 
   {
-    id: "28",
+    id: "17",
     name: "Dettol Antiseptic Liquid",
-    keyword: "",
+    keyword: "Dettol",
     weight: "500 ml",
     oldPrice: 215,
     newPrice: 185,
@@ -224,9 +224,9 @@ const products = [
   },
 
   {
-    id: "31",
+    id: "18",
     name: "Colgate Strong Teeth Toothpaste",
-    keyword: "",
+    keyword: "Colgate Strong Teeth Toothpaste Lifebuoy Total 10 Soap ",
     weight: "500 G",
     oldPrice: 270,
     newPrice: 225,
@@ -237,9 +237,9 @@ const products = [
 
 
   {
-    id: "34",
+    id: "19",
     name: "Clinic Plus Strong & Long Shampoo",
-    keyword: "",
+    keyword: "Clinic Plus Shampoo",
     weight: "340 ml",
     oldPrice: 220,
     newPrice: 185,
@@ -249,9 +249,9 @@ const products = [
   },
 
   {
-    id: "41",
+    id: "20",
     name: "Aashirvaad Shuddha Chakki Atta",
-    keyword: "",
+    keyword: "Chakki Atta",
     weight: "5 kG",
     oldPrice: 280,
     newPrice: 246,
@@ -262,7 +262,7 @@ const products = [
 
 
   {
-    id: "46",
+    id: "21",
     name: "Madhur Pure & Hygiene Sugar",
     keyword: "chini ",
     weight: "1 kG",
@@ -276,9 +276,9 @@ const products = [
   },
 
   {
-    id: "47",
+    id: "22",
     name: "Tata Salt Vacuum Evaporated",
-    keyword: "",
+    keyword: "Tata Salt",
     weight: "1 kG",
     oldPrice: 30,
     newPrice: 27,
@@ -289,9 +289,9 @@ const products = [
 
 
   {
-    id: "50",
+    id: "23",
     name: "Fortune Poha (Thick)",
-    keyword: "",
+    keyword: "Fortune ",
     weight: "500 G",
     oldPrice: 55,
     newPrice: 45,
@@ -307,9 +307,9 @@ const products = [
 
 
   {
-    id: "62",
+    id: "24",
     name: "Fortune Everyday Basmati Rice",
-    keyword: "",
+    keyword: "Fortune ",
     weight: "1 kG",
     oldPrice: 115,
     newPrice: 95,
@@ -319,9 +319,9 @@ const products = [
   },
 
   {
-    id: "63",
+    id: "25",
     name: "Tata Sampann Toor Dal",
-    keyword: "",
+    keyword: "Tata Dal",
     weight: "1 kG",
     oldPrice: 190,
     newPrice: 161,
@@ -331,9 +331,9 @@ const products = [
   },
 
   {
-    id: "64",
+    id: "26",
     name: "Rajdhani Moong Dal Chilka",
-    keyword: "",
+    keyword: "Dal",
     weight: "1 kG",
     oldPrice: 211,
     newPrice: 168,
@@ -346,9 +346,9 @@ const products = [
 
 
   {
-    id: "71",
+    id: "27",
     name: "MDH Kitchen King Masala",
-    keyword: "",
+    keyword: "MDH Kitchen King Masala",
     weight: "100 G",
     oldPrice: 82,
     newPrice: 72,
@@ -359,9 +359,9 @@ const products = [
 
 
   {
-    id: "74",
+    id: "28",
     name: "Catch Coriander Powder (Dhaniya)",
-    keyword: "",
+    keyword: "Powder Dhaniya",
     weight: "200 G",
     oldPrice: 68,
     newPrice: 58,
@@ -371,9 +371,9 @@ const products = [
   },
 
   {
-    id: "75",
+    id: "29",
     name: "Jeera (Cumin Seeds) Loose Pack",
-    keyword: "",
+    keyword: "Jeera",
     weight: "250 G",
     oldPrice: 120,
     newPrice: 98,
@@ -383,7 +383,7 @@ const products = [
   },
 
   {
-    id: "76",
+    id: "30",
     name: "Catch Garam Masala Powder",
     keyword: "garam,masala",
     weight: "100 G",
@@ -395,9 +395,9 @@ const products = [
   },
 
   {
-    id: "81",
+    id: "31",
     name: "Tata Tea Gold Premium Tea",
-    keyword: "tea,leaves",
+    keyword: "Tata ,leaves Tea",
     weight: "500 G",
     oldPrice: 330,
     newPrice: 306,
@@ -412,9 +412,9 @@ const products = [
 
 
   {
-    id: "93",
+    id: "32",
     name: "Happilo Premium Raisins (Kishmish)",
-    keyword: "raisins,dried",
+    keyword: "Kishmish",
     weight: "250 G",
     oldPrice: 250,
     newPrice: 200,
@@ -426,6 +426,7 @@ const products = [
   },
 
 
+ 
 
 ];
 

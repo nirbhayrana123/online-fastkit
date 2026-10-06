@@ -32,6 +32,7 @@ export default function ProductDetails({
     }
   }, [id, product]);
 
+  // Zoom function with controlled zoom level
   const handleZoom = (e: React.MouseEvent<HTMLDivElement>) => {
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
     const x = ((e.clientX - left) / width) * 100;
@@ -40,6 +41,7 @@ export default function ProductDetails({
     setZoomStyle({
       display: "block",
       backgroundPosition: `${x}% ${y}%`,
+      backgroundSize: "120%",
     });
   };
 
@@ -52,6 +54,28 @@ export default function ProductDetails({
       </div>
     );
   }
+
+  // Related Products Filtering Logic (Current product ko hata kar Same keyword/Name match karke top par LANA)
+  const otherProducts = products.filter((p: any) => String(p.id) !== String(product.id));
+
+  const sortedProducts = [...otherProducts].sort((a: any, b: any) => {
+    const targetkeyword = (product.keyword || "").toLowerCase();
+    const targetKeyword = (product.keyword || "").toLowerCase();
+
+    const matchA =
+      (a.keyword && a.keyword.toLowerCase() === targetkeyword) ||
+      (a.name && targetkeyword && a.name.toLowerCase().includes(targetkeyword)) ||
+      (a.keyword && targetKeyword && a.keyword.toLowerCase().includes(targetKeyword));
+
+    const matchB =
+      (b.keyword && b.keyword.toLowerCase() === targetkeyword) ||
+      (b.name && targetkeyword && b.name.toLowerCase().includes(targetkeyword)) ||
+      (b.keyword && targetKeyword && b.keyword.toLowerCase().includes(targetKeyword));
+
+    if (matchA && !matchB) return -1;
+    if (!matchA && matchB) return 1;
+    return 0;
+  });
 
   // Thumbnails Array
   const productImages: string[] = [
@@ -141,13 +165,14 @@ export default function ProductDetails({
 
             <button className="cart-btn order">Order Now</button>
           </div>
+
           <section className="why-choose-section">
             <h5>Why shop from FreshKart?</h5>
 
             <div className="features-grid">
               <div className="feature-card">
                 <div className="icon-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
                 </div>
                 <div className="feature-text">
                   <h6>Lightning Fast Express Delivery</h6>
@@ -155,10 +180,9 @@ export default function ProductDetails({
                 </div>
               </div>
 
-
               <div className="feature-card">
                 <div className="icon-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l5.58-5.58c.94-.94.94-2.48 0-3.42L12 2Z" /><path d="M7 7h.01" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2H2v10l9.29 9.29c.94.94 2.48.94 3.42 0l5.58-5.58c.94-.94.94-2.48 0-3.42L12 2Z" /><path d="M7 7h.01" /></svg>
                 </div>
                 <div className="feature-text">
                   <h6>Best Price Guarantee & Deals</h6>
@@ -166,10 +190,9 @@ export default function ProductDetails({
                 </div>
               </div>
 
-
               <div className="feature-card">
                 <div className="icon-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" /><path d="m9 12 2 2 4-4" /></svg>
                 </div>
                 <div className="feature-text">
                   <h6>100% Quality & Freshness Assured</h6>
@@ -177,10 +200,9 @@ export default function ProductDetails({
                 </div>
               </div>
 
-
               <div className="feature-card">
                 <div className="icon-box">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
                 </div>
                 <div className="feature-text">
                   <h6>30,000+ Wide Product Assortment</h6>
@@ -192,9 +214,9 @@ export default function ProductDetails({
         </div>
       </div>
 
-      {/* RELATED PRODUCTS BOTTOM GRID */}
+      {/* RELATED PRODUCTS BOTTOM GRID (FILTERED) */}
       <div className="product-row">
-        {products.map((p: any) => {
+        {sortedProducts.map((p: any) => {
           const item = cart?.find((i: any) => String(i.id) === String(p.id));
 
           return (
@@ -213,14 +235,7 @@ export default function ProductDetails({
               </div>
 
               <div className="bottom">
-                <div
-                  className="productname"
-                  onClick={() => {
-                    navigate(`/product/${p.id}`);
-                    window.scrollTo(0, 0);
-                  }}
-                  style={{ cursor: "pointer" }}
-                >
+                <div className="productname">
                   <h4>{p.name}</h4>
                 </div>
 
